@@ -1,0 +1,81 @@
+.signin-container{
+    margin: 0;
+    padding: 0 4rem;
+    display: flex;
+    flex-direction: column;
+    background: #11294F;
+    color: white;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    font-family: 'Roboto', sans-serif;
+    /* align-items: center; */
+}
+.signin-container .left{
+    margin-top: 6rem;
+}
+.signin-container .right{
+    display: flex;
+    flex-direction: column;
+    row-gap: 4rem;
+    margin-top: 8rem;
+   
+}
+
+.signin-container .right .inputs{
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+    
+}
+.signin-container .right .inputs .input-area{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 1rem;
+
+}
+.signin-container .right .inputs .input-area .input-label{
+    font-size: 1.4rem;
+}
+
+
+.signin-container .right .log-head{
+    font-size: 4rem;    
+}
+
+.signin-container .right .inputs .rad-input{
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+    flex-wrap: wrap;
+}
+
+.signin-container .right .inputs .rad-input .rad-btn{
+    display: flex;
+    flex-direction: row;
+    column-gap: 2rem;
+}
+.signin-container .right .inputs .rad-input .rad-btn .rad-label{
+    font-size: 1.3rem;
+}
+
+.signin-container .right .signin-btn button{
+    background: #0095A9;
+    width: 180px;
+    height: 53px;
+    border-radius: 100px;
+    border: 1px solid #0095A9;
+    font-size: 20px;
+    color : white;
+}
+.signin-container .left .sign-in{
+    width:80%  ;
+    height: 90%;
+}
+
+.hidden {
+    display: none;
+}

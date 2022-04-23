@@ -1,0 +1,53 @@
+.navbar {
+    background: #11294F;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    font-size: 3rem;
+    color:white;
+}
+
+.navbar .name span {
+    color: #0095A9;
+}
+
+.navbar .buttons{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 1.8rem;
+    font-size: 2rem;
+    gap: 4rem;
+}
+
+.navbar .buttons .btn{
+    
+    width: 8rem;
+    border-radius: 8px;
+    font-size: 1.5rem;
+    padding: 0.5rem 0.8rem 0.5rem 0.8rem;
+    cursor : pointer;
+}
+
+.navbar .buttons .signin{
+    color: white;
+    background: #0095A9;
+    border: 1px solid #0095A9;
+}
+
+.navbar .buttons .signup{
+    color: white;
+    border: 1px solid #0095A9;
+    background: #11294F;
+}
+
+.navbar .buttons .logout{
+    color: white;
+    background: #0095A9;
+    border: 1px solid #0095A9;
+    border-radius: 100px;
+}

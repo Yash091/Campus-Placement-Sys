@@ -1,0 +1,91 @@
+.home-container {
+    margin-left: 0;
+    padding: 0 4rem;
+    display: flex;
+    flex-direction: column;
+    background: #11294F;
+    color: white;
+    min-height: 100vh;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* .home-container .top-bar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    font-size: 3rem;
+}
+
+.home-container .top-bar .name span {
+    color: #0095A9;
+}
+
+.home-container .top-bar .buttons{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 1.8rem;
+    font-size: 2rem;
+    gap: 4rem;
+}
+
+.home-container .top-bar .buttons .btn{
+    
+    width: 8rem;
+    border-radius: 8px;
+    font-size: 1.5rem;
+    padding: 0.5rem 0.8rem 0.5rem 0.8rem;
+}
+
+.home-container .top-bar .buttons .signin{
+    color: white;
+    background: #0095A9;
+    border: 1px solid #0095A9;
+}
+
+.home-container .top-bar .buttons .signup{
+    color: white;
+    border: 1px solid #0095A9;
+    background: #11294F;
+} */
+
+.home-container .main {
+    display: flex;
+    flex-direction: row;
+}
+
+.home-container .main .left {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding: 2rem;
+}
+
+.home-container .main .left .heading{
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    font-size: 4.3rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    width : 40rem;
+}
+
+.home-container .main .left .text{
+    font-size: 1.3rem;
+    margin-bottom: 2rem;
+    line-height: 40px;
+}
+
+.home-container .main .right {
+    display: flex;
+    flex-grow: 1;
+}
+
+.home-container .main .right img{
+    width:100%;
+}

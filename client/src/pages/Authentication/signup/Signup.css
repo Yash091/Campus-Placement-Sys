@@ -1,0 +1,174 @@
+.signup-container {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    background: #11294F;
+    color: white;
+    min-height: 100vh;
+    align-items: center;
+    /* justify-content: center; */
+}
+
+.signup-container .heading{
+  font-size: 5rem;
+  margin-top: 2rem;
+  margin-bottom: 5rem;
+  padding: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 52px;
+  line-height: 61px;
+  color: #FFFFFF;
+}
+
+.signup-container .form {
+    display: flex;
+    flex-direction: row;
+    gap:1rem;
+    /* min-height: 50vw;    */
+    /* align-items: center; */
+    width: 100%;
+    margin-bottom: 4rem;
+}
+
+.signup-container .form .first{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    gap: 3rem;
+    align-items: center;
+}
+
+.signup-container .form .first .common{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.signup-container .form .first div{
+    width: 100%;
+}
+
+.signup-container .form .first .gender{
+  display: flex;
+  flex-direction: row;
+  width: 50%;
+}
+
+.signup-container .form .second{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    gap: 3rem;
+    align-items: center;
+}
+
+input {
+    background: none;
+    outline: none;
+    border: 1px solid #11294F;
+    border-bottom: 1px solid #0095A9;
+    color: white;
+    font-size: 1.3rem;
+}
+
+label {
+    font-size: 1.2rem;
+}
+
+.common input {
+    width: 50%;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: white;
+    /* font-size : 22px; */
+  opacity: 0.5; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: white;
+  font-size : 22px;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+  color: white;
+  font-size : 22px;
+}
+
+input[type="radio"] {
+  /* Add if not using autoprefixer */
+  -webkit-appearance: none;
+  /* Remove most all native input styles */
+  appearance: none;
+  /* For iOS < 15 */
+  /* Not removed via appearance */
+  margin: 0;
+
+  font: inherit;
+  color: #0095A9;
+  width: 1.15em;
+  height: 1.15em;
+  /* background-color: #0095A9; */
+  border: 0.15em solid #0095A9;
+  border-radius: 50%;
+  transform: translateY(-0.075em);
+
+  display: grid;
+  place-content: center;
+}
+
+input[type="radio"]::before {
+  content: "";
+  width: 0.65em;
+  height: 0.65em;
+  border-radius: 50%;
+  transform: scale(0);
+  transition: 120ms transform ease-in-out;
+  box-shadow: inset 1em 1em var(--form-control-color);
+  /* Windows High Contrast Mode */
+  background-color: CanvasText;
+}
+
+input[type="radio"]:checked::before {
+  transform: scale(1);
+  background-color: #0095A9;
+}
+
+/* input[type="radio"]:focus {
+  outline: max(2px, 0.15em) solid currentColor;
+  outline-offset: max(2px, 0.15em);
+} */
+
+#file {
+  display:none;
+}
+
+.file-resume {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  align-items: center;
+}
+
+.male , .female {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.signup-btn{
+  background: #0095A9;
+  border-radius: 100px;
+  border: 1px solid #0095A9;
+  color: white;
+  width: 180px;
+  height: 53px;
+  font-size: 20px;
+  margin-bottom: 2rem;
+}
+
+/* .com {
+  width: 118%;
+} */
