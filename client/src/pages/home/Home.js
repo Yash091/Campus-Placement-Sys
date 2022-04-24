@@ -1,20 +1,23 @@
-import React from 'react'
+import React, { useContext, useEffect } from 'react'
 import "./Home.css"
 import Homepic from "../../images/homepic.png"
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import Navbar from '../../components/Navbar/Navbar';
+import { AppContext } from '../../context/Context';
 
 const Home = () => {
 
+  const {userData} = useContext(AppContext);
+  const navigate = useNavigate();
+  useEffect(()=>{
+    if(userData?.admin_name)
+      navigate("/admin");
+    else if(userData?.SName)
+      navigate("/student");
+  },[])
+
   return (
     <div className="home-container">
-      {/* <div className="top-bar">
-        <div className="name">Cam<span>Rec</span></div>
-        <div className="buttons">
-          <button className="signin btn"><Link to="/signin" style={{color: 'inherit', textDecoration: 'none' }}>Sign in</Link></button>
-          <button className="signup btn"><Link to="/signup" style={{color: 'inherit', textDecoration: 'none' }}>Sign up</Link></button>
-        </div>
-      </div> */}
       <Navbar />
       <div className="main">
         <div className="left">

@@ -14,10 +14,13 @@ import CompanyUpdate from "./components/admin/companyUpdate/CompanyUpdate"
 import CompanyAdd from './components/admin/companyAdd/CompanyAdd';
 import ViewJobs from './components/common/viewJobs/ViewJobs';
 import UpdateProfile from './components/student/updateProfile/UpdateProfile';
+import AppliedJobs from './components/student/AppliedJobs/AppliedJobs';
+import ViewAppliedJob from './components/admin/viewAppliedJob/ViewAppliedJob';
 import { AppContext } from './context/Context';
 
 function App() {
   const {userData} = useContext(AppContext)
+
   return (
     <>
       <Routes>
@@ -28,12 +31,14 @@ function App() {
         <Route path="admin" element={userData?<AdminLandingPage />: <Navigate to="/"/>} />
         <Route path="viewstudents" element={userData?<ViewStudents />: <Navigate to="/"/>} />
         <Route path="jobupdate/:id" element={userData?<JobUpdate/>: <Navigate to="/"/>} />
-        <Route path="jobadd" element={userData?<JobAdd />: <Navigate to="/"/>}/>
+        <Route path="jobadd" element={userData?<JobAdd />: <Navigate to="/"/>} />
         <Route path="viewjobs" element={userData?<ViewJobs/>: <Navigate to="/"/>} />
         <Route path="viewcompanies" element={userData?<ViewCompanies/>: <Navigate to="/"/>} />
         <Route path="companyupdate/:id" element={userData?<CompanyUpdate/>: <Navigate to="/"/>} />
         <Route path="companyadd" element={userData?<CompanyAdd/>: <Navigate to="/"/>} />
         <Route path="updateprofile" element={userData?<UpdateProfile />: <Navigate to="/"/>} />
+        <Route path="appliedjobs/:id" element={userData?<AppliedJobs />: <Navigate to="/"/>} />
+        <Route path="viewappliedjobs" element={userData?<ViewAppliedJob />: <Navigate to="/"/>} />
       </Routes>
     </>
   );

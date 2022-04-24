@@ -24,7 +24,7 @@ const ViewStudents = () => {
       }
     }
     getStudent();
-  }, [])
+  }, []);
   
   return (
     <>

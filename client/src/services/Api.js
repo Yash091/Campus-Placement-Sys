@@ -137,6 +137,36 @@ export const deleteJob = async (id) => {
     }
 }
 
+export const applyJob = async (obj) => {
+    try {
+        const data = await axios.post(`${url}/applyjob` , obj);
+        return data;
+    } catch (error) {
+        return error;
+    }
+}
+
+export const viewApplyJob = async (id) => {
+    // for student
+    try {
+        const data = await axios.get(`${url}/viewapplyjob/${id}`);
+        return data;
+    } catch (error) {
+        return error;
+    }
+}
+
+export const getAllAppliedJob = async () => {
+    // for admin
+    try {
+        const data = await axios.get(`${url}/getallappliedjob`);
+        return data;
+    } catch (error) {
+        return error;
+    }
+}
+
+
 ///////////////////////////////////////////////////////////
 //Admin
 export const loginAdmin = async (obj) => {

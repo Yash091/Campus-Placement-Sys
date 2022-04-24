@@ -9,50 +9,6 @@
     font-family: 'Roboto', sans-serif;
 }
 
-/* .home-container .top-bar {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    padding-left: 2rem;
-    padding-right: 2rem;
-    font-size: 3rem;
-}
-
-.home-container .top-bar .name span {
-    color: #0095A9;
-}
-
-.home-container .top-bar .buttons{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-evenly;
-    padding: 1.8rem;
-    font-size: 2rem;
-    gap: 4rem;
-}
-
-.home-container .top-bar .buttons .btn{
-    
-    width: 8rem;
-    border-radius: 8px;
-    font-size: 1.5rem;
-    padding: 0.5rem 0.8rem 0.5rem 0.8rem;
-}
-
-.home-container .top-bar .buttons .signin{
-    color: white;
-    background: #0095A9;
-    border: 1px solid #0095A9;
-}
-
-.home-container .top-bar .buttons .signup{
-    color: white;
-    border: 1px solid #0095A9;
-    background: #11294F;
-} */
-
 .home-container .main {
     display: flex;
     flex-direction: row;

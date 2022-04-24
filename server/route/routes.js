@@ -1,7 +1,7 @@
 import express,{Router} from "express";
 import { getAllStudent, addStudent, getStudent , updateStudent} from "../controller/studentcontroller.js";
 import { addCompany, deleteCompany, getAllCompany, updateCompany, getCompany } from "../controller/companycontroller.js";
-import { addJob, getAllJob, deleteJob, updateJob, getJob } from "../controller/jobcontroller.js";
+import { addJob, getAllJob, deleteJob, updateJob, getJob, applyJob, viewApplyJob, getAllAppliedJob } from "../controller/jobcontroller.js";
 import { updateAdmin , getAdmin } from "../controller/admincontroller.js";
 const router = express.Router();
 
@@ -31,10 +31,13 @@ router.post("/deletecompany", deleteCompany);
 
 /////////////////////////////////////////////////////////////////////
 //Job
-router.post("/addjob",addJob);
-router.get("/getalljob",getAllJob);
-router.get("/getjob/:id",getJob);
+router.post("/addjob", addJob);
+router.get("/getalljob", getAllJob);
+router.get("/getjob/:id", getJob);
 router.post("/deletejob", deleteJob);
 router.post("/updatejob", updateJob);
+router.post("/applyjob", applyJob);
+router.get("/viewapplyjob/:id", viewApplyJob); //student
+router.get("/getallappliedjob", getAllAppliedJob); //admin
 
 export default router;

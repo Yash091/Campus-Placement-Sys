@@ -27,7 +27,6 @@ const Signin = () => {
             window.alert(user.data.message);
             else{
                 window.localStorage.setItem("user",JSON.stringify(user.data[0]));
-             
                 navigate("/admin");
             }
         }
@@ -38,7 +37,6 @@ const Signin = () => {
                 window.alert(user.data.message);
             else{
                 window.localStorage.setItem("user",JSON.stringify(user.data[0]));
-                
                 navigate("/student");
             }
         }
