@@ -19,7 +19,7 @@ const AdminLandingPage = () => {
             <Link to="/viewjobs"><img src={ViewJob} onClick={()=>{navigate("/viewjobs")}}/></Link>
             <Link to="/viewcompanies"><img src={ViewCompanies} onClick={()=>{navigate("/viewcompanies")}}/></Link>
             <Link to="/viewappliedjobs"><img src={JobsAppliedByStudent}/></Link>
-            <Link to=""><img src={UpdateProfile} /></Link>
+            <Link to="/adminupdate"><img src={UpdateProfile} /></Link>
         </div>
       </>
   )

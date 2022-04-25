@@ -18,7 +18,8 @@ export const getAdmin = async (req , res) => {
 
 export const updateAdmin = async (req , res) => {
     try {
-        const sql = `Update officer set password = "${req.body.password}" where aid = "1"`;
+        
+        const sql = `Update officer set admin_pass="${req.body.admin_pass}" where aid = "1"`;
         db.query(sql, (error, result) => {
           if (error) return res.status(422).json(error);
           res.status(200).json(result);

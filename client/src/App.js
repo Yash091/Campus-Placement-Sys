@@ -16,6 +16,7 @@ import ViewJobs from './components/common/viewJobs/ViewJobs';
 import UpdateProfile from './components/student/updateProfile/UpdateProfile';
 import AppliedJobs from './components/student/AppliedJobs/AppliedJobs';
 import ViewAppliedJob from './components/admin/viewAppliedJob/ViewAppliedJob';
+import AdminUpdate from './components/admin/adminupdate/adminupdate';
 import { AppContext } from './context/Context';
 
 function App() {
@@ -39,6 +40,7 @@ function App() {
         <Route path="updateprofile" element={userData?<UpdateProfile />: <Navigate to="/"/>} />
         <Route path="appliedjobs/:id" element={userData?<AppliedJobs />: <Navigate to="/"/>} />
         <Route path="viewappliedjobs" element={userData?<ViewAppliedJob />: <Navigate to="/"/>} />
+        <Route path="adminupdate" element={userData?<AdminUpdate />: <Navigate to="/"/>} />
       </Routes>
     </>
   );

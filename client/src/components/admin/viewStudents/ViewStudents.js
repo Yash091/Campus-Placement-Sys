@@ -8,7 +8,7 @@ import TableHead from "@mui/material/TableHead";
 import TableRow from "@mui/material/TableRow";
 import Paper from "@mui/material/Paper";
 import rows from "./dummy";
-import { getAllStudent } from "../../../services/Api";
+import { getAllStudent, deleteStudent } from "../../../services/Api";
 import Navbar from "../../Navbar/Navbar";
 
 const ViewStudents = () => {
@@ -17,15 +17,23 @@ const ViewStudents = () => {
   useEffect(() => {
     const getStudent = async () => {
       const stud = await getAllStudent();
-      console.log(stud);
+ 
       if(stud) {
         setData(stud.data);  
-        console.log(data);
+      
       }
     }
     getStudent();
   }, []);
   
+  const handleDelete = async (student) => {
+    const stud = await deleteStudent(student);
+    if(stud) {
+     
+      window.location.reload();
+    }
+  }
+
   return (
     <>
       <Navbar />
@@ -44,6 +52,7 @@ const ViewStudents = () => {
                 <TableCell numeric>Mobile</TableCell>
                 <TableCell >Email ID</TableCell>
                 <TableCell >Resume</TableCell>
+                <TableCell>DELETE</TableCell>
               </TableRow>
             </TableHead>
             <TableBody>
@@ -59,6 +68,7 @@ const ViewStudents = () => {
                     <TableCell numeric>{student.Mobile}</TableCell>
                     <TableCell numeric>{student.Email}</TableCell>
                     <TableCell numeric>{student.S_resume}</TableCell>
+                    <TableCell onClick={()=>handleDelete(student)}><img style={{ height: "2rem", width: "2rem", cursor: "pointer"}} src="https://img.icons8.com/fluency/48/000000/delete-trash.png" /></TableCell>
                   </TableRow>
                 ))
               }

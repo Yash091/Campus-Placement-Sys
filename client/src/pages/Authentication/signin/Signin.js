@@ -22,7 +22,7 @@ const Signin = () => {
         if(data.designation === "admin"){
             const user = await loginAdmin(data);
             
-            // console.log(user);
+           
             if(user.data.message)
             window.alert(user.data.message);
             else{

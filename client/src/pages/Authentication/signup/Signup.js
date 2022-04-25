@@ -24,7 +24,7 @@ const Signup = () => {
         e.preventDefault();
         setUser({...user , [e.target.name]: e.target.value});
     }
-    // console.log(user.file.split());
+ 
     
     const handleSignup = async (e) => {
         // console.log(user);

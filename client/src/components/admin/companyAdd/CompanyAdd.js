@@ -23,6 +23,7 @@ const CompanyAdd = () => {
     const company = await addCompany(data);
     
     if(company)
+      
       navigate("/viewcompanies");
   }
 

@@ -22,13 +22,14 @@ const CompanyUpdate = () => {
 
 
   const handleChange = (e) => {
-    console.log(e.target.value);
+   
     setData({...data , [e.target.name]: e.target.value});
   }
   // console.log(data);
   const handleCompanyUpdate = async () =>{
     const company = await updateCompany(data);
     if(company)
+      window.alert("Company details has been Updated!!");
       navigate("/viewCompanies");
   }
 

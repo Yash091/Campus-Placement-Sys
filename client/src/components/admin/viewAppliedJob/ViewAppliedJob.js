@@ -18,10 +18,10 @@ const ViewAppliedJob = () => {
     useEffect(() => {
         const getAppliedJobs = async () => {
           const jobs = await getAllAppliedJob();
-          console.log(jobs);
+          
           if(jobs) {
             setData(jobs.data);  
-            console.log(data);
+            
           }
         }
         getAppliedJobs();

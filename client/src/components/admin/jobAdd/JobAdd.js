@@ -22,7 +22,7 @@ const JobAdd = () => {
   const handleJobAdd = async () =>{
     
     const job = await addJob(data);
-    console.log(job);
+    
     if (!job?.data){window.alert("Kindly Check the Company Name!!");}
     else
       navigate("/viewjobs");

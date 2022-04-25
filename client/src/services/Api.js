@@ -27,7 +27,7 @@ export const getAllStudent = async () => {
         const data = await axios.get(`${url}/getallstudent`);
         return data;
     } catch (error) {
-        console.log(error);
+        // console.log(error);
         return error;
     }
 }
@@ -35,6 +35,15 @@ export const getAllStudent = async () => {
 export const updateStudent = async (obj) => {
     try {
         const data = await axios.post(`${url}/updatestudent` , obj , {withCredentials: true});
+        return data;
+    } catch (error) {
+        return error;
+    }
+}
+
+export const deleteStudent = async (obj) => {
+    try {
+        const data = await axios.post(`${url}/deletestudent` , obj , {withCredentials: true});
         return data;
     } catch (error) {
         return error;
@@ -105,7 +114,7 @@ export const getAllJob = async () => {
         const data = await axios.get(`${url}/getalljob`);
         return data;
     } catch (error) {
-        console.log(error);
+        // console.log(error);
         return error;
     }
 }
@@ -178,9 +187,9 @@ export const loginAdmin = async (obj) => {
     }
 }
 
-export const updateAdmin = async (obj) => {
+export const adminUpdate = async (obj) => {
     try {
-        const data = await axios.post(`${url}/updateadmin` , obj , {withCredentials: true});
+        const data = await axios.post(`${url}/adminupdate` , obj , {withCredentials: true});
         return data;
     } catch (error) {
         return error;

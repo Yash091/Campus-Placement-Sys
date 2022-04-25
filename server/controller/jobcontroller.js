@@ -2,7 +2,7 @@ import db from "../database/conn.js";
 
 export const addJob = async (req, res) => {
     try {
-        console.log(req.body);
+        // console.log(req.body);
         const sql = `INSERT INTO job(Job_Name,Job_Desc,Job_salary,Com_Name ) VALUES ("${req.body.name}", "${req.body.desc}" , ${Number(req.body.salary)},"${req.body.cname}")`;
         db.query(sql,(error,result) => {
             if(error)

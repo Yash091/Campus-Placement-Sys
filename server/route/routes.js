@@ -1,5 +1,5 @@
 import express,{Router} from "express";
-import { getAllStudent, addStudent, getStudent , updateStudent} from "../controller/studentcontroller.js";
+import { getAllStudent, addStudent, getStudent , updateStudent, deleteStudent} from "../controller/studentcontroller.js";
 import { addCompany, deleteCompany, getAllCompany, updateCompany, getCompany } from "../controller/companycontroller.js";
 import { addJob, getAllJob, deleteJob, updateJob, getJob, applyJob, viewApplyJob, getAllAppliedJob } from "../controller/jobcontroller.js";
 import { updateAdmin , getAdmin } from "../controller/admincontroller.js";
@@ -12,7 +12,7 @@ router.get("/",(req,res)=>{
 //////////////////////////////////////////////////////////////////////
 //Admin
 router.post("/loginadmin",getAdmin);
-router.post("/updateadmin",updateAdmin);
+router.post("/adminupdate",updateAdmin);
 
 //////////////////////////////////////////////////////////////////////
 //Student
@@ -20,6 +20,7 @@ router.post("/addstudent",addStudent);
 router.get("/getallstudent",getAllStudent);
 router.post("/updatestudent",updateStudent);
 router.post("/getstudent",getStudent);
+router.post("/deletestudent", deleteStudent);
 
 //////////////////////////////////////////////////////////////////////
 //Company

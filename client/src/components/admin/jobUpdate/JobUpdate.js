@@ -20,7 +20,7 @@ const JobUpdate = () => {
     useEffect(()=>{
       const getJ = async () => {
           const Jb = await getJob(id);
-          console.log(Jb);
+        
           setData(Jb.data[0]);
       }
       getJ();
@@ -33,8 +33,9 @@ const JobUpdate = () => {
 
   const handleJobUpdate = async () =>{
     const job = await updateJob(data);
-    console.log(job);
+    
     if(job)
+    window.alert("Job has been Updated!!");
     navigate("/viewjobs");
   }
 

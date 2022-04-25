@@ -36,12 +36,13 @@ const ViewJobs = () => {
       const getJob = async () => {
         const data = await viewApplyJob(userData.Enrol_num);
         setApplied(data.data);
-        console.log(data.data);
+        
       }
       getJob();
     }, []);
     const handleDelete = async (id) => {
         const data = await deleteJob(id);
+        window.location.reload();
     }
 
     const handleApply = async (job) => {
@@ -54,7 +55,6 @@ const ViewJobs = () => {
         };
         const data = await applyJob(obj);
         if(data) {
-          console.log(data);
           window.location.reload();
         }
     }

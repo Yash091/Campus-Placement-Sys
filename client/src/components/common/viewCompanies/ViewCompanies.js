@@ -22,7 +22,7 @@ const ViewCompanies = () => {
             const companies = await getAllCompanies();
             if(companies) {
                 setData(companies.data);
-                console.log(companies.data);
+                
             }
         }
         allCompanies();
