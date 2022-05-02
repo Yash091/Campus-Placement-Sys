@@ -39,7 +39,7 @@ Campus Placement system is the project which is beneficial for college students,
     (iii) npm start
     Backend port - 8000
     
-    ** Note: For running backend you need to do a few things,
+    **Note: For running backend you need to do a few things**
     - Connect your Workbench by writing this in the [this](./server/database/conn.js) file
       ```
         let db = sql.createConnection({ 
