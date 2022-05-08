@@ -153,7 +153,7 @@ Campus Placement system is the project which is beneficial for college students,
         |-- companycontroller.js  #Contains all the functions related to companies
         |-- jobcontroller.js      #Contains all the functions related to companies
         |-- studentconroller.js   #Contains all the functions related to students
-    |-- databse/             #To establish connection between database and backend
+    |-- database/            #To establish connection between database and backend
     |-- route/               #Contains all routes used in project
     |-- server.js            #Main file of server folder
 ```
