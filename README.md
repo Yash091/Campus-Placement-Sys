@@ -26,17 +26,17 @@ Campus Placement system is the project which is beneficial for college students,
 **After extracting the zip file or after cloning the repository**
 
 1. Open the folder Campus-Placement-Sys-master in terminal. In this you will find 2 folders.
-    (i) Client
-    (ii) Server
+    - Client
+    - Server
 2. To run Client folder, type the following commands in terminal
-    (i) cd client
-    (ii) npm install
-    (iii) npm start
+    1. cd client
+    1. npm install
+    1. npm start
     Frontend port - 3000
 3. To run Server folder, type the following commands in terminal
-    (i) cd server
-    (ii) npm install
-    (iii) npm start
+    1. cd server
+    1. npm install
+    1. npm start
     Backend port - 8000
     
     **Note: For running backend you need to do a few things**
