@@ -76,7 +76,7 @@ Campus Placement system is the project which is beneficial for college students,
             Course VARCHAR(50) NOT NULL,
             Mobile VARCHAR(11) NOT NULL,
             Gender VARCHAR(10) NOT NULL,
-            S_resume VARCHAR(100) NOT NULL,
+            S_resume VARCHAR(100) NOT NULL
             );
         ```
       - Company Table
