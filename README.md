@@ -118,7 +118,7 @@ Campus Placement system is the project which is beneficial for college students,
         ```
           CREATE TABLE if not exists officer(
                 aid INT PRIMARY KEY,
-                admin_pass VARCHAR(40) NOT NULL)
+                admin_pass VARCHAR(40) NOT NULL
             );
             INSERT INTO officer ( admin_pass)
                 VALUES
