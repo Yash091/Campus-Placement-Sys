@@ -6,7 +6,7 @@ Campus Placement system is the project which is beneficial for college students,
 1. [ReactJs](https://reactjs.org/)
 2. [NodeJs](https://nodejs.org/en/about/)
 3. [Express](https://expressjs.com/)
-4. [SQL](https://dev.mysql.com/doc/)
+4. [MySQL](https://www.mysql.com/)
 
 ## Pre-Requisites
 
