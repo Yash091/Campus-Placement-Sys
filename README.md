@@ -181,5 +181,10 @@ Campus Placement system is the project which is beneficial for college students,
 | `POST` /updatejob | | jobId | Allows admin to update job having this id|
 | `POST` /applyjob | | enrolment number , student name , jobId , jobName , companyName | Allows a particular student to apply for a particular job |
 | `GET` /viewapplyjob | studentId | | Allows student to view the jobs he/she has applied |
-|`GET` /getallapplyjob | | | Allows admin to view which job has been applied by which student |
+|`GET` /getallapplyjob | | | Allows admin to view which job has been applied by which student |  
+
+## Screens  
+![Frame 84](https://user-images.githubusercontent.com/76587223/169648864-0d055439-6316-43c1-b34b-ccd072614946.png)
+
+
 
